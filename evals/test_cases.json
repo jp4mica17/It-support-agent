@@ -1,0 +1,182 @@
+[
+  {
+    "id": "TC001",
+    "query": "I forgot my password and can't log into my computer",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Access/Identity",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC002",
+    "query": "How do I set up the Microsoft Authenticator app for MFA?",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Access/Identity",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC003",
+    "query": "My VPN keeps disconnecting every few minutes when working from home",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": true,
+    "should_escalate": false,
+    "category": "Network",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TC004",
+    "query": "I'm a new employee starting Monday. What IT stuff do I need to do?",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Onboarding",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC005",
+    "query": "Windows is asking me for a BitLocker recovery key and I can't log in",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Access/Identity",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TC006",
+    "query": "I need to install Adobe Photoshop on my laptop for a design project",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": true,
+    "should_escalate": false,
+    "category": "Software",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC007",
+    "query": "Outlook says 'Working Offline' and I can't send or receive emails",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Email",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC008",
+    "query": "How do I access my work desktop from home?",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Network",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC009",
+    "query": "The CEO's laptop crashed 20 minutes before his all-hands presentation and he can't access his slides",
+    "expected_tools": ["escalate_to_human"],
+    "should_create_ticket": false,
+    "should_escalate": true,
+    "category": "Executive Support",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TC010",
+    "query": "I think I was phished. I clicked a link in an email and entered my password before realizing it looked suspicious",
+    "expected_tools": ["escalate_to_human"],
+    "should_create_ticket": false,
+    "should_escalate": true,
+    "category": "Security",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TC011",
+    "query": "My entire team — about 20 people — can't access the shared drive since this morning",
+    "expected_tools": ["escalate_to_human"],
+    "should_create_ticket": false,
+    "should_escalate": true,
+    "category": "Network",
+    "difficulty": "hard"
+  },
+  {
+    "id": "TC012",
+    "query": "How do I enroll my new MacBook in Intune or Jamf?",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Endpoint Management",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC013",
+    "query": "My Microsoft Authenticator stopped working after I got a new phone",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": true,
+    "should_escalate": false,
+    "category": "Access/Identity",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TC014",
+    "query": "Company Portal on my Windows laptop shows no apps — it's completely blank",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Software",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TC015",
+    "query": "I accidentally deleted an important email from my manager last week. Can I get it back?",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Email",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC016",
+    "query": "My laptop won't turn on at all. It's completely dead even when plugged in.",
+    "expected_tools": ["search_knowledge_base", "create_servicenow_ticket"],
+    "should_create_ticket": true,
+    "should_escalate": false,
+    "category": "Hardware",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TC017",
+    "query": "I need VPN access set up on my personal laptop to work from home",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Network",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC018",
+    "query": "Outlook calendar isn't showing any meetings and won't sync",
+    "expected_tools": ["search_knowledge_base"],
+    "should_create_ticket": false,
+    "should_escalate": false,
+    "category": "Email",
+    "difficulty": "easy"
+  },
+  {
+    "id": "TC019",
+    "query": "I'm getting a BitLocker key prompt every time I boot, even after entering the key",
+    "expected_tools": ["search_knowledge_base", "create_servicenow_ticket"],
+    "should_create_ticket": true,
+    "should_escalate": false,
+    "category": "Access/Identity",
+    "difficulty": "medium"
+  },
+  {
+    "id": "TC020",
+    "query": "I can't log into anything. MFA is broken, password reset isn't working, and I'm completely locked out",
+    "expected_tools": ["search_knowledge_base", "create_servicenow_ticket"],
+    "should_create_ticket": true,
+    "should_escalate": false,
+    "category": "Access/Identity",
+    "difficulty": "hard"
+  }
+]
